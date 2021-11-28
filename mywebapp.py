@@ -10,6 +10,8 @@ na_to_k_text = BoundedFloatText(min=0.0, max=50.0, value=14, description="Na to 
 prescribe_button = Button(description="Presribe")
 prescribe_output = Output()
 
+
+
 # Button click event handlers ...
 def prescribe_button_on_click(b):
     request_url = f"https://itsshaikaslamwebapp22.azurewebsites.net//drug?Age={age_text.value}&Sex={gender_dropdown.value}&BP={bp_dropdown.value}&Cholesterol={cholesterol_dropdown.value}&Na_to_K={na_to_k_text.value}"
