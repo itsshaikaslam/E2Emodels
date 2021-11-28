@@ -3,6 +3,8 @@ import pickle
 from flask import request,jsonify
 app = Flask(__name__)
 
+
+# my changes now Aslam
 gender_map = {"F": 0, "M": 1}
 bp_map = {"HIGH": 0, "LOW": 1, "NORMAL": 2}
 cholesterol_map = {"HIGH": 0, "NORMAL": 1}
@@ -36,10 +38,7 @@ def predict_drug(Age,
 @app.route("/")
 def hello():
     return "A test web service for accessing a machine learning model Aslam."
-
-
-
-                
+   
 @app.route('/drug', methods=['GET'])
 def api_all():
 #    return jsonify(data_science_books)
