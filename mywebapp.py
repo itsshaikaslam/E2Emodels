@@ -14,7 +14,7 @@ prescribe_output = Output()
 
 # Button click event handlers ...
 def prescribe_button_on_click(b):
-    request_url = f"https://itsshaikaslamwebapp22.azurewebsites.net//drug?Age={age_text.value}&Sex={gender_dropdown.value}&BP={bp_dropdown.value}&Cholesterol={cholesterol_dropdown.value}&Na_to_K={na_to_k_text.value}"
+    request_url = f"https://itsshaikaslamwebapp11.azurewebsites.net//drug?Age={age_text.value}&Sex={gender_dropdown.value}&BP={bp_dropdown.value}&Cholesterol={cholesterol_dropdown.value}&Na_to_K={na_to_k_text.value}"
     response = requests.get(request_url)
     recommended_drug = response.json()["recommended_drug"]
 
@@ -26,5 +26,3 @@ def prescribe_button_on_click(b):
 prescribe_button.on_click(prescribe_button_on_click)
 
 vbox_prescribe = VBox([prescribe_label, age_text, gender_dropdown, bp_dropdown, cholesterol_dropdown, na_to_k_text, prescribe_button, prescribe_output])
-
- 
