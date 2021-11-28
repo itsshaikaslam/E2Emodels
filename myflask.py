@@ -32,9 +32,6 @@ def predict_drug(Age,
 # 4. Return the "raw" version of the prediction i.e. the actual name of the drug rather than the numerical encoded version
     return drug_map[y_predict] 
 
-
-
-
 @app.route("/")
 def hello():
     return "A test web service for accessing a machine learning model Aslam."

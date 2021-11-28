@@ -24,5 +24,3 @@ def prescribe_button_on_click(b):
 prescribe_button.on_click(prescribe_button_on_click)
 
 vbox_prescribe = VBox([prescribe_label, age_text, gender_dropdown, bp_dropdown, cholesterol_dropdown, na_to_k_text, prescribe_button, prescribe_output])
-
- 
